@@ -53,6 +53,7 @@ Add jar files to CLASSPATH
 
 Execute project
 ---------------
+cd over to the directory that has pom.xml
 
     mvn exec:java -Dexec.mainClass="zerofox.assessment.exercise.ListPrime"
 
