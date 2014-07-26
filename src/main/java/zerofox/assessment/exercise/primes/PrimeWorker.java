@@ -12,23 +12,22 @@ public class PrimeWorker extends UntypedActor {
     @Override
     public void onReceive(Object message) {
         if (message instanceof Integer) {
-        	System.out.println("In "+Thread.currentThread());
-            if(isPrime((Integer) message)) {
-            	System.out.print(message+", ");
+            if(isPrime((Integer) message))  {
+                System.out.println((Integer) message);
             }
         } else {
             unhandled(message);
         }
     }
     
-  //checks whether an int is prime or not.
+   // check if number is prime. returns a bool
    private boolean isPrime(int n) {
-	   if(n==2) return true;
-        //check if n is a multiple of 2
-        if (n%2==0) return false;
-        //if not, then just check the odds
-        for(int i=3;i*i<=n;i+=2) {
-            if(n%i==0)
+	   if(n == 2) return true;
+        // is n a multiple of 2?
+        if (n%2 == 0) return false;
+        // if not, check the odds
+        for(int i=3; i*i<=n; i+=2) {
+            if(n%i == 0)
                 return false;
         }
         return true;
