@@ -19,7 +19,7 @@ Install Maven
 
 Install Akka
 ------------
-Download akka from http://akka.io/downloads/ and install it at /path/to/akka
+Download akka from http://akka.io/downloads/ and install it at /path/to/akka-2.2.4/
 
     cd /path/to/akka-2.2.4/
     export AKKA_HOME=<pwd>
