@@ -49,7 +49,7 @@ Compile parallel prime
 Add jar files to CLASSPATH
 --------------------------
 
-    export CLASSPATH=/User/<user>/.m2
+    export CLASSPATH=/Users/<user>/.m2
 
 Execute project
 ---------------
